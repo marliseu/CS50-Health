@@ -1,0 +1,165 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+body {
+    background:rgba(234,234,234,1);
+}
+
+.tile {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 30%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 14px/normal "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(90,90,90,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+}
+
+.shorttile {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 30%;
+  height: 50px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 14px/normal "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(90,90,90,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+}
+
+.longtile {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 30%;
+  height: 100px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 14px/normal "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(90,90,90,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+}
+
+.fronttile {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 14px/normal "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(90,90,90,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+}
+
+.widetile
+ {
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 14px/normal "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(90,90,90,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3) ;
+}
+
+#water
+{
+    border: 0px;
+}
+
+.textbox input
+{
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+
