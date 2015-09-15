@@ -96,7 +96,7 @@
                     if ($weight[0]["weightlbs"] === 0)
                         echo("<h3>You have no weight data!</h3>");
                     else
-                        echo("<h3>You weigh <br><br></br><h2>" . (int)$weight[0]["weightlbs"] . "</h2><h3><br><br> pounds!</h3>");
+                        echo("<h3>You weigh <br><br><h2>" . (int)$weight[0]["weightlbs"] . "</h2><h3><br><br> pounds!</h3>");
                 ?>
             </div>
         </td>
