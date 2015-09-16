@@ -8,7 +8,11 @@
                     <fieldset>
                         <div class="form-group">
                             <form action="profile.php" method="post">
-                                <div><input name="gender" placeholder="gender" type="text" required/></div>
+                                <div>
+                                    <input type="radio" name="gender" value="male" checked> Male
+                                    <input type="radio" name="gender" value="female"> Female
+                                </div>
+
                                 <br>
                                 <br>
                                 <div class="textbox">
