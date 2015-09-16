@@ -37,9 +37,9 @@
 
     if ($heightfeet !== 0 && $heightinches !== 0 && $weight !== 0)
     {
-        $height = ((($heightfeet[0]["heightfeet"] * 12) + $heightinches[0]["heightinches"]) * 0.025) ^ 2;
-        $kilos = $weight[0]["weightlbs"] * 0.45;
-        $bmi = $kilos / $height;
+        $height = (($heightfeet[0]["heightfeet"] * 12) + $heightinches[0]["heightinches"]);
+        $lbs = $weight[0]["weightlbs"];
+        $bmi = 703 * ($lbs / ($height * $height));
     }
     else
         $bmi = NULL;
@@ -56,7 +56,7 @@
     
     // render home
     render("home.php", ["title" => "Home", "calories" => $calories, "exercise" => $exercise, "water" => $water, "weight" => $weight, 
-    "height" => $height, "kilos" => $kilos, "bmi" => $bmi, "daily" => $daily
+    "height" => $height, "pounds" => $lbs, "bmi" => $bmi, "daily" => $daily
     ]);
 
 ?>
