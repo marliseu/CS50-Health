@@ -35,15 +35,19 @@
 
     $heightinches = query("SELECT * FROM profile WHERE id = ?", $_SESSION["id"]);
 
+    $weight[0]["weightlbs"] = (int) $weight[0]["weightlbs"];
 
-    if ($heightfeet[0]["heightfeet"] !== 0 && $heightinches[0]["heightinches"] !== 0 && $weight[0]["weightlbs"] !== 0)
+
+    if ($heightfeet[0]["heightfeet"] !== 0 && $heightinches[0]["heightinches"] !== 0 && $weight[0]["weightlbs"] != 0)
     {
         $height = (($heightfeet[0]["heightfeet"] * 12) + $heightinches[0]["heightinches"]);
         $lbs = $weight[0]["weightlbs"];
         $bmi = 703 * ($lbs / ($height * $height));
-    }
-    else
+    } else {
         $bmi = NULL;
+        $height = 0;
+        $lbs = 0;
+    }
         
     
     if ($exercise !== NULL)
