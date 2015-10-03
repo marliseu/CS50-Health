@@ -35,7 +35,8 @@
 
     $heightinches = query("SELECT * FROM profile WHERE id = ?", $_SESSION["id"]);
 
-    if ($heightfeet !== 0 && $heightinches !== 0 && $weight !== 0)
+
+    if ($heightfeet[0]["heightfeet"] !== 0 && $heightinches[0]["heightinches"] !== 0 && $weight[0]["weightlbs"] !== 0)
     {
         $height = (($heightfeet[0]["heightfeet"] * 12) + $heightinches[0]["heightinches"]);
         $lbs = $weight[0]["weightlbs"];

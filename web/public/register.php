@@ -45,7 +45,7 @@
                     $_SESSION["id"] = $id;
                     $_SESSION["username"] = $_POST["username"];
                     
-                    redirect("/index.php");
+                    redirect("/profile.php");
                 }
             }
         }
